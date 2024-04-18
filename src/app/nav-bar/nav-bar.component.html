@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLinkng g c ="/">Mini Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/products">Products</a>
+          </li>
+          <li ngbDropdown  class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" ngbDropdownToggle id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+            <ul ngbDropdownMenu  class="dropdown-menu" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" routerLink="/orders">My Orders</a></li>
+              <li><a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a></li>
+              <li><a class="dropdown-item" routerLink="/admin/products">Manage Products</a></li>
+            </ul>
+          </li> 
+              <li>
+                <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+              </li>  
+        </ul>
+          
+
+      </div> 
+      
+    </div>
+  </nav>
